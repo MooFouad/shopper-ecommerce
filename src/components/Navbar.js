@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     // nav container
-    <div className="flex justify-between items-center p-[12px] max-md:px-[10px] shadow-sm max-md:flex-col fixed w-full bg-white z-10">
+    <div className="flex justify-between items-center p-[12px] max-md:px-[10px] shadow-sm max-md:flex-col fixed w-full bg-white z-10 top-0">
       {/* logo & icon  */}
 
       <div className="nav-logo flex justify-between  max-md:w-[100vw] items-center gap-x-4 cursor-pointer md:px-10 max-md:px-4">

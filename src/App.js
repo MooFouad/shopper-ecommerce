@@ -17,6 +17,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar/>
+        <div className='py-10'>
         <Routes>
           <Route path='/' element={<Shop />} />
           <Route path='/men' element={<ShopCategory banner={menPanner} category='men'/>} />
@@ -28,6 +29,7 @@ function App() {
           <Route path='/cart' element={<Cart/>} />
           <Route path='/login' element={<Login />} />
         </Routes>
+        </div>
         <Footer/>
       </BrowserRouter>
     </div>
