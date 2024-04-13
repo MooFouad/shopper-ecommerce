@@ -45,10 +45,11 @@ const CartItems = () => {
                 {item.new_price*cartItems[item.id]}
               </p>
               </div>
-              <div className="flex justify-center items-center gap-2 bg-red-500 py-1 px-4 cursor-pointer rounded">
+              <div 
+              onClick={()=> removeFromCart(item.id)}
+              className="flex justify-center items-center gap-2 bg-red-500 py-1 px-4 cursor-pointer rounded">
                 <p className=''>Remove</p>
                 <img 
-                onClick={()=> removeFromCart(item.id)}
                 className='cursor-pointer'
                 src={removeIcon} alt="remove-icon" />
               </div>
@@ -59,7 +60,7 @@ const CartItems = () => {
         {/* cart total amount */}
         <div className="">
           {/* cart total */}
-          <div className="">
+          <div className="flex justify-between items-center bold text-2xl">
             <h1>Subtotal</h1>
             <p>
               ${getTotalAmount()}
