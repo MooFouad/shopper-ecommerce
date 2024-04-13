@@ -16,7 +16,9 @@ const CartItems = () => {
           <div className="flex items-center justify-center gap-10 max-md:flex-col mb-8 border p-4 rounded-2xl">
             {/* left item img */}
             <div className="flex flex-1">
-              <img src={item.image} alt="product-img" />
+              <img src={item.image} 
+              className='md:h-[50%]'
+              alt="product-img" />
             </div>
             {/* right container */}
             <div className="flex flex-1  flex-col gap-6 text-gray-800 bold md:w-[200px]">
@@ -57,8 +59,13 @@ const CartItems = () => {
             </div>
           </div>
           <hr className='my-4'/>
-        {/* cart total amount */}
-        <div className="">
+          </div>
+          
+          }
+            return null;
+        })
+        }{/* cart total amount */}
+      <div className="">
           {/* cart total */}
           <div className="flex justify-between items-center bold text-2xl">
             <h1>Subtotal</h1>
@@ -68,12 +75,8 @@ const CartItems = () => {
           </div>
           
         </div>
-          </div>
-            }
-            return null;
-        })
-        }
     </div>
+      
   </>
   )
 }
